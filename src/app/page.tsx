@@ -261,7 +261,7 @@ export default function Home() {
   const sceneTransition = {
     duration: 0.3,
     ease: "easeOut",
-  };
+  } as const;
 
   /* ── Submit Handler (Scene 0 → Scene 1) ── */
   const handleSubmitName = useCallback((e?: React.FormEvent) => {
