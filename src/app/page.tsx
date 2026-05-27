@@ -575,8 +575,8 @@ export default function Home() {
                         setName(e.target.value);
                         playClick();
                       }}
-                      onMouseEnter={playHover}
-                      onFocus={playHover}
+                      onMouseEnter={() => playHover()}
+                      onFocus={() => playHover()}
                       placeholder="যেমন: শাফায়াত"
                       autoComplete="off"
                       className="glow-input w-full rounded-xl px-5 py-4 text-base font-bangla outline-none bg-black/60 border border-white/10"
@@ -662,7 +662,7 @@ export default function Home() {
                   transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.96 }}
-                  onMouseEnter={playHover}
+                  onMouseEnter={() => playHover()}
                 >
                   Begin Journey ✨
                 </motion.button>
@@ -707,7 +707,7 @@ export default function Home() {
                       className="btn-gold py-5 px-10 rounded-full font-bangla font-extrabold text-base cursor-pointer shadow-lg relative flex items-center gap-2 self-center mt-2"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.96 }}
-                      onMouseEnter={playHover}
+                      onMouseEnter={() => playHover()}
                     >
                       Reveal My Fate 🐐
                     </motion.button>
@@ -785,7 +785,7 @@ export default function Home() {
                       className="btn-teal py-4 px-8 rounded-xl font-bangla font-bold text-sm cursor-pointer shadow-lg mt-4 flex items-center justify-center gap-1.5 self-center"
                       whileHover={{ scale: 1.03 }}
                       whileTap={{ scale: 0.97 }}
-                      onMouseEnter={playHover}
+                      onMouseEnter={() => playHover()}
                     >
                       Continue Journey ➡️
                     </motion.button>
@@ -985,7 +985,7 @@ export default function Home() {
                         }}
                         whileHover={{ scale: 1.08 }}
                         whileTap={{ scale: 0.92 }}
-                        onMouseEnter={playHover}
+                        onMouseEnter={() => playHover()}
                       >
                         <ArrowRight size={20} className="text-white" />
                       </motion.button>
@@ -1017,7 +1017,7 @@ export default function Home() {
                       }}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.96 }}
-                      onMouseEnter={playHover}
+                      onMouseEnter={() => playHover()}
                     >
                       ঈদের দোয়া 🤲
                     </motion.button>
