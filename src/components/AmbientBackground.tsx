@@ -329,8 +329,8 @@ function FloatingOrbs({ isLight }: { isLight: boolean }) {
    • background crescent moon (top-right)
    • twinkling & floating star particles
    ────────────────────────────────────────────── */
-export default function AmbientBackground({ theme = "dark" }: { theme?: "dark" | "light" }) {
-  const isLight = theme === "light";
+export default function AmbientBackground({ theme = "dark" }: { theme?: "dark" | "evening" | "light" }) {
+  const isLight = theme === "evening" || theme === "light";
   return (
     <div
       className="ambient-bg transition-all duration-1000"
